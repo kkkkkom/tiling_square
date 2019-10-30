@@ -95,7 +95,10 @@ class Solution:
             return
         
         fill_board(0,0,0)
+        print(f'Input rectangle is {n} x {m}\n')
+        print(f'Minimum number of squres needed is {self.res}\n')
         self.print_ans()
+        print(' ')
         return self.res
 
     def print_ans(self):
@@ -108,4 +111,4 @@ class Solution:
 if __name__=='__main__':
     n,m = int(sys.argv[1]),int(sys.argv[2])
     s = Solution()
-    print(s.tilingRectangle(n,m))
+    s.tilingRectangle(n,m)
