@@ -12,3 +12,5 @@ e.g.:
   python3 tiling_square.py 13 11
 # Showcase
 Example of solver results:
+
+<img width="452" alt="Screen Shot 2019-10-29 at 10 36 47 PM" src="https://user-images.githubusercontent.com/55373469/67831795-ad3fea00-fa9c-11e9-9b16-b43264514acd.png">
