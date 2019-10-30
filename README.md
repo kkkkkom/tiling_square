@@ -9,6 +9,6 @@ Assuming the rectangle area is NxM
 python3 tiling_square.py \<N\> \<M\>
 
 e.g.:
-  python3 tiling_square.py 11 13
+  python3 tiling_square.py 13 11
 # Showcase
 Example of solver results:
