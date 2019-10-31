@@ -25,6 +25,7 @@ back_colors = {
 
 class Solution:
     def tilingRectangle(self, n: int, m: int) -> int:
+        self.cc = 0
         self.res = float('inf')
         board = [[0]*m for i in range(n)]
         self.ans = []
@@ -62,7 +63,8 @@ class Solution:
                     if i<0 or i>=n or j<0 or j>=m or board[i][j]!=0:
                         return 0,i,j
                     else:
-                        board[i][j]=e
+                        board[i][j]=(e,self.cc)
+            self.cc+=1
             return 1,i,j+1
         
         def dessert_board(ii,jj,e,it,jt):
@@ -103,8 +105,8 @@ class Solution:
 
     def print_ans(self):
         for row in self.ans:
-            for n in row:
-                cprint('{:3} '.format(n),colors[(n+3)%7],back_colors[(n+2)%7],end='')
+            for n,c in row:
+                cprint('{:3} '.format(n),colors[(c+3)%7],back_colors[(c+2)%7],end='')
             print()
         return
 
